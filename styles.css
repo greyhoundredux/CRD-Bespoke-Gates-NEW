@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --text-main: white;
+    --text-hightlight: coral;
+    --background-alt: #f3f3f3;
+    --quote-background: #e7e7e7;
+    --footer: #242424;
+    --footer-text: white;
+    --footer-bottom: #171717;
+    --footer-bottom-text: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* NAV BAR */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    color: var(--text-main);
+}
+
+nav .header-title {
+    font-size: 26px;
+}
+
+nav .header-title span {
+    color: var(--text-hightlight);
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-main);
+    border-bottom: solid 2px transparent;
+    transition: all ease 0.3s;
+}
+
+nav ul li a:hover {
+    border-color: var(--text-hightlight);
+    color: var(--text-hightlight);
+}
+
+nav a {
+    color: var(--text-main);
+}
+
+nav a button,
+.footer-section form button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--text-hightlight);
+    background-color: var(--text-hightlight);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav a button:hover,
+.footer-section form button:hover {
+    border-color: var(--text-main);
+    background-color: transparent;
+}
+
+
+
+/* LANDING PAGE */
+.wrap {
+    background: rgba(0, 0, 0, 0.5) url(pics/gloucestershire.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+.landing-content {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+}
+
+.landing-content h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 48px;
+}
+
+.landing-content p {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+}
+
+
+
+/* ABOUT ME */
+.about-me-container {
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-content {
+    margin: auto;
+    height: 300px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me-text {
+    width: 60%;
+    justify-content: flex-start;
+    padding: 20px 0;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-text h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-paragraphs p {
+    padding: 5px 0;
+}
+
+.about-me-pic {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-me-pic img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-wood {
+    display: flex;
+    margin-top: 60px;
+    height: 420px;
+    width: 100%;
+}
+
+.wood-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 75%;
+    height: 100%;
+    padding: 5%; 
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.wood-text h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+}
+
+.wood-text p {
+    padding: 2%;
+}
+
+.about-wood .iroko {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3) url(pics/iroko.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+.about-wood .red-deal {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3) url(pics/reddeal.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+
+
+/* CONTACT */
+.contact-container {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.contact-container .contact-header h2 {
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.contact-content .contact-option {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.contact-content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.contact-content .phone a:hover,
+.contact-content .facebook a:hover {
+    color: var(--text-main);
+}
+
+.contact-content .email a:hover {
+    color: var(--text-hightlight);
+}
+
+.contact-content h3 {
+    margin-bottom: 10px;
+}
+
+.contact-content .email {
+    background-image: url(pics/work1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact-content .phone {
+    background-image: url(pics/work2.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact-content .facebook {
+    background-image: url(pics/work3.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+/* TESTIMONIALS */
+.testimonial-container {
+    border-top: 3px solid rgb(173, 173, 173);
+    background-color: var(--background-alt);
+    text-align: center;
+    padding: 80px 0px;
+}
+.testimonial-container .testimonial-header h2 {
+    font-family: 'Kanit', sans-serif;
+}
+.testimonial-content {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    column-gap: 10%;
+}
+.testimonial-content .quote {
+    background-color: var(--quote-background);
+    padding: 3rem 1rem;
+    border-bottom: 3px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+}
+.testimonial-content .quote p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+.testimonial-content .quote .pic-container {
+    border: 3px solid rgb(173, 173, 173);
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    bottom: -25%;
+    transform: translateX(-50%);
+}
+.testimonial-content .quote .quote-pic1 {
+    background: url(pics/testimonial1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}.testimonial-content .quote .quote-pic2 {
+    background: url(pics/testimonial2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--footer);
+    color: var(--footer-text);
+    font-size: 16px;
+    height: auto;
+    position: relative;
+}
+
+.footer-title {
+    color: var(--footer-text);
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    border-bottom: 2px var(--footer-text) solid;
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+}
+
+.links a,
+.footer-section .contact a {
+    width: 90px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.links li,
+.footer-section .contact a li {
+    color: var(--footer-text);
+    list-style: none;
+    transition: 0.3s;
+}
+
+.links li:hover,
+.footer-section .contact a li:hover {
+    color: var(--text-hightlight);
+    margin-left: 10px;
+}
+
+.contact-input {
+    width: 100%;
+    background-color: #141311;
+    color: var(--footer-text);
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    line-height: 2em;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.contact-input:focus {
+    color: var(--footer);
+    background-color: var(--main);
+}
+
+.footer-section form button {
+    float: right;
+}
+
+.legal-container {
+    padding-bottom: 40px;
+}
+
+.legal {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: flex;
+    background-color: var(--footer-bottom);
+    color: var(--footer-bottom-text);
+    height : 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 0.7em;
+}
+
+.footer-bottom a {
+    color: var(--footer-bottom-text);
+    transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: var(--text-hightlight);
+}
+
+
+
+/* QUERIES */
+
+@media screen and (max-width: 950px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .contact-content .contact-option {
+        width: 75%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .contact-content .contact-option a {
+        padding: 15%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    nav ul {
+        width: 50%;
+    }
+    .about-me-content {
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .about-me-text {
+        width: 80%;
+    }
+    .about-me-pic {
+        width: 80%;
+    }
+    .about-wood {
+        flex-direction: column;
+        height: auto;
+    }
+    .wood-text {
+        max-width: none;
+        padding: 10% 5%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        width: 75%;
+        margin-top: 10px;
+    }
+    nav a {
+        margin-top: 10px;
+    }
+    .testimonial-content {
+        margin: 30px auto 100px auto;
+        grid-template-columns: 1fr;
+        row-gap: 20%;
+    }
+    .testimonial-content .quote {
+        padding-bottom: 4rem;
+    }
+    .testimonial-content .quote .pic-container {
+        left: 50%;
+        bottom: -25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landing-content {
+        max-width: none;
+        padding: 200px 40px;
+    }
+    .landing-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav ul {
+        width: 90%;
+    }
+}
